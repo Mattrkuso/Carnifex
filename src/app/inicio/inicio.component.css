@@ -1,0 +1,49 @@
+.mat-toolbar{
+    background-color: blueviolet;
+}
+.mat-card{
+    margin-left:10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    border: solid rgba(0, 0, 0, 0.205);
+    height: 500px;
+}
+
+
+/**Toolbar***/
+.name{
+    position: absolute;
+    right: 5px;
+    width: 22%;
+    height: 50px;
+
+}
+#ico{
+    font-size: 20px;
+    position: absolute;
+    margin-top: 5px;
+}
+#icoo{
+    position: absolute;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 5px;
+}
+
+
+.nam{
+    position: absolute;
+    right: 5px;
+    width: 25%;
+    height: 49px;
+
+}
+#im{
+    margin-right: 20px;
+}
+#arr{
+    color: black;
+    margin-right: 2px;
+    margin-top: 12px;
+    position: absolute;
+}

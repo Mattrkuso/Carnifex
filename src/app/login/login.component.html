@@ -1,0 +1,31 @@
+<mat-toolbar>
+    Creasoft
+</mat-toolbar>
+
+<mat-card>
+    <br>
+    <h1>Ingrese a su cuenta</h1>
+    <br>
+    <form  [formGroup]="login" (ngSubmit)="onLogin()">
+        <mat-form-field appearance="outline">
+            <mat-label>Usuario/Correo</mat-label>
+            <input type="email" matInput placeholder="Ingrese su correo" name="nombre" formControlName="correo" required>
+            <button mat-icon-button matSuffix >
+                <mat-icon>email</mat-icon>
+                </button>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline">
+            <mat-label>Contraseña</mat-label>
+            <input type="password" matInput [type]="hide ? 'password' : 'text'" placeholder="Ingrese su ontraseña" name="password" formControlName="password" required>
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+        </mat-form-field>
+        <br>
+        <button type="submit" mat-raised-button>Ingresar</button>
+             <br><br>
+             <a [routerLink]="['/registro']" routerLinkActive="router-link-active" >Crear una cuenta</a>
+    </form>
+    <br>
+</mat-card>

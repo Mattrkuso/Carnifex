@@ -1,0 +1,10 @@
+.mat-toolbar{
+    background-color: blueviolet;
+}
+.mat-card{
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 520px;
+    border: solid rgba(137, 43, 226, 0.171);
+}

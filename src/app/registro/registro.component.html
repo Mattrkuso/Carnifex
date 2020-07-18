@@ -1,0 +1,33 @@
+<mat-toolbar>
+    Registro
+</mat-toolbar>
+
+<mat-card>
+    <br>
+    <h1>Formulario de registro</h1>
+    <br>
+    <form [formGroup]="registro" (ngSubmit)="onRegistrar()">
+        <mat-form-field appearance="outline">
+            <mat-label>Nombre</mat-label>
+            <input matInput placeholder="Ingrese su nombre"  formControlName="nombre" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline">
+            <mat-label>Edad</mat-label>
+            <input type="number" matInput placeholder="Ingrese su edad"  formControlName="edad" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline">
+            <mat-label>Correo</mat-label>
+            <input type="email" matInput placeholder="Ingrese su correo"  formControlName="correo" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline">
+            <mat-label>Contraseña</mat-label>
+            <input type="password" matInput placeholder="Ingrese su contraseña"  formControlName="password" required>
+        </mat-form-field>
+        <br>
+        <button type="submit" mat-raised-button>Registrar</button>
+    </form>
+    <br>
+</mat-card>
