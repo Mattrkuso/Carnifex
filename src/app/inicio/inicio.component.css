@@ -8,8 +8,16 @@
     border: solid rgba(0, 0, 0, 0.205);
     height: 500px;
 }
-
-
+.da{
+    font-weight: 600;
+    margin-left: 8px;
+}
+a{
+    color: black;
+}
+a:link{
+    text-decoration: none;
+}
 /**Toolbar***/
 .name{
     position: absolute;

@@ -1,5 +1,16 @@
 <mat-toolbar>
     Perfil de
+    <div class="nam" [matMenuTriggerFor]="beforeMenu">
+        <img id="im" src="assets/Forma 2.png" alt="user" style="width: 40px; height: 40px; border-radius: 50px;" >
+        <i id="arr" class="fas fa-chevron-down"></i>
+        <mat-menu #beforeMenu="matMenu" xPosition="before">
+            <div class="da">Configuracion</div><br>
+            <mat-divider></mat-divider>
+            <button mat-menu-item [routerLink]="['/actualizar']" routerLinkActive="router-link-active" >Actualizar</button>
+            <mat-divider></mat-divider>
+            <button type="submit" (ngSubmit)="outlogout" mat-menu-item>Salir</button>
+          </mat-menu>
+    </div>
 </mat-toolbar>
 
 <mat-card>

@@ -12,8 +12,8 @@ export class LoginService {
 
   constructor(private httpClient: HttpClient) { }
 
-  onLogin(): Observable<Usuario[]> {
-    console.log('getPeople '+this.baseURL + 'people')
-    return this.httpClient.get<Usuario[]>(this.baseURL + '/login')
+  onLogin(){
+    
   }
+  
 }

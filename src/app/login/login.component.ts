@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, FormControlName } from '@angular/forms';
+import {  FormControl, FormGroup } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { LoginService } from './login.service';
+import { error } from '@angular/compiler/src/util';
+
 
 @Component({
   selector: 'app-login',
@@ -21,7 +24,7 @@ export class LoginComponent implements OnInit {
 
   login: FormGroup;
 
-  constructor( private router:Router) {
+  constructor( private logiService:LoginService, private router:Router) {
     this.login = this.createFormGroup();
 
   }
@@ -30,13 +33,12 @@ export class LoginComponent implements OnInit {
   }
 
   onLogin() {
-    console.log('Ingreso');
-    let correo = this.login.get('Email').value;
-    let password = this.login.get('Password').value;
+    console.log('Bienvenido')
+    
+   
+   
 
-    if (correo === 'your value' && password === 'your value') {
-      this.router.navigate(['/inicio']);
-    }
+}
 
-  }
+
 }

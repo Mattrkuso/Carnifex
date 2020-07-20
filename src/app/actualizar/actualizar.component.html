@@ -1,0 +1,35 @@
+<mat-toolbar>
+   <a id="ini" [routerLink]="['/inicio']" routerLinkActive="router-link-active"><h1>Inicio</h1></a>
+</mat-toolbar>
+
+<mat-card>
+    <div class="lo" style="font-weight: 600;">
+        Ingrese sus datos
+    </div>
+    <br>
+    <form  [formGroup]="update" (ngSubmit)="onUpdate()">
+        <mat-form-field appearance="outline">
+            <mat-label>Nombre</mat-label>
+            <input type="text" matInput placeholder="Actualizar nombre" formControlName="nombre" autofocus>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline">
+            <mat-label>Edad</mat-label>
+            <input type="number" matInput placeholder="Actualizar Edad" formControlName="edad">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline">
+            <mat-label>Correo</mat-label>
+            <input type="email" matInput placeholder="Actualizar correo" formControlName="correo">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline">
+            <mat-label>Contraseña</mat-label>
+            <input type="password" matInput placeholder="Contraseña" formControlName="password" required>
+        </mat-form-field>
+        <br>
+    <p>Debes ingresar tu contraseña para confirmar</p>
+        <button type="submit" mat-raised-button>Actualizar</button>
+    </form>
+    
+</mat-card>

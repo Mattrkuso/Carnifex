@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {PerfilService } from './perfil.service';
 import { PerfilGuard } from './perfil.guard';
+import { Router } from '@angular/router';
 
 
 
@@ -11,9 +12,13 @@ import { PerfilGuard } from './perfil.guard';
 })
 export class PerfilComponent implements OnInit {
 
-  constructor() { }
+  constructor( private perfiSer: PerfilService, private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  outlogout(){
+    
   }
 
 }

@@ -54,6 +54,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { ActualizarComponent } from './actualizar/actualizar.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { PerfilComponent } from './perfil/perfil.component';
     RegistroComponent,
     LoginComponent,
     InicioComponent,
-    PerfilComponent
+    PerfilComponent,
+    ActualizarComponent
   ],
   imports: [
     BrowserModule,
